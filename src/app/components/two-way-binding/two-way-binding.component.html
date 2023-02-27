@@ -1,0 +1,11 @@
+<div class="aula">
+  <h2>Two way data binding</h2>
+  <form action="">
+    <!-- [(ngModel)]="name" Faz o bind automaticamente de name como uma propriedade  -->
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Digite o nome aqui" >
+    <button type="submit">Enviar</button>
+  </form>
+  <div *ngIf="name !== ''">
+    <h5>O nome é: {{ name }}</h5>
+  </div>
+</div>

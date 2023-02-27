@@ -1,6 +1,10 @@
 .title
  {
   background-color: black;
-  color: rgb(255, 247, 0);
+  color: greenyellow;
   padding: 15px;
  }
+
+ a {
+  color: rgb(0, 38, 255);
+}

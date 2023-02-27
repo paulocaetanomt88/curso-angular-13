@@ -1,0 +1,8 @@
+<div class="aula">
+  <p *ngIf="show">Exibindo mensagem se true, ocultando se false</p>
+
+  <button *ngIf="show == false; else botaoOcultar" (click)="showMessage()">Exibir</button>
+  <ng-template #botaoOcultar>
+    <button (click)="showMessage()">Ocultar</button>
+  </ng-template>
+</div>
